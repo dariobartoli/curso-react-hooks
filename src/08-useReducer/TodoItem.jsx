@@ -7,6 +7,7 @@ export const TodoItem = ( {todo, onDeleteTodo, onToggleTodo})  => {
             <span 
               onDoubleClick={() => onToggleTodo(todo.id)}
               style={{ textDecoration: todo.done ? 'underline' : 'none' }}
+              aria-label='span'
               >
                 {todo.description}
             </span>
